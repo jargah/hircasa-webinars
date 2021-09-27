@@ -24,7 +24,8 @@ module.exports = {
                 "PAGES": path.resolve(__dirname, 'src/pages'),
                 "COMPONENTS": path.resolve(__dirname, 'src/components'),
                 "SCSS": path.resolve(__dirname, 'src/scss'),
-                "ASSETS": path.resolve(__dirname, 'src/assets')
+                "ASSETS": path.resolve(__dirname, 'src/assets'),
+                "PLUGINS": path.resolve(__dirname, 'src/plugins')
             }
         }
     },
