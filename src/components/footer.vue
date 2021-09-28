@@ -3,10 +3,18 @@
         <div class="footer__bar">
             
             <div class="footer__social d-flex align-items-center justify-content-end"> 
-                <box-icon type='logo' name='facebook' size='md' border='circle' class="footer__social--icon" />
-                <box-icon type='logo' name='instagram' size='md' border='circle' class="footer__social--icon" />
-                <box-icon type='logo' name='twitter' size='md' border='circle' class="footer__social--icon" />
-                <box-icon type='logo' name='linkedin' size='md' border='circle' class="footer__social--icon" />
+                <a href="https://www.facebook.com/HIRCasaMexico" target="_blank">
+                    <box-icon type='logo' name='facebook' size='md' border='circle' class="footer__social--icon" />
+                </a>
+                <a href="https://www.instagram.com/hircasa/" target="_blank">
+                    <box-icon type='logo' name='instagram' size='md' border='circle' class="footer__social--icon" />
+                </a>
+                <a href="https://twitter.com/HIRCASAMEXICO" target="_blank">
+                    <box-icon type='logo' name='twitter' size='md' border='circle' class="footer__social--icon" />
+                </a>
+                <a href="https://mx.linkedin.com/company/hir-casa" target="_blank">
+                    <box-icon type='logo' name='linkedin' size='md' border='circle' class="footer__social--icon" />
+                </a>
             </div>
         </div>
     </div>

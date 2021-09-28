@@ -58,6 +58,66 @@
 </script>
 
 <style lang="scss" scoped>
+
+    @media (min-width: 320px) and (max-width: 599px) {
+        .thanks {
+            &__circles {
+            
+                display: none;
+            }
+
+            &__point-orange {
+                
+                display: none;
+            }   
+        }
+    }
+
+    @media (min-width: 600px) and (max-width: 767px) {
+        .thanks {
+            &__circles {
+            
+                display: none;
+            }
+
+            &__point-orange {
+                
+                display: none;
+            }  
+        }
+    }
+
+
+    @media (min-width: 768px) and (max-width: 991px) {
+       .thanks {
+            &__circles {
+            
+                display: none;
+            }
+
+            &__point-orange {
+                
+                display: none;
+            }  
+
+            
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .thanks {
+            &__circles {
+            
+                display: none;
+            }
+
+            &__point-orange {
+                
+                display: none;
+            }  
+        }
+    }
+
     .thanks {
         height: 80vh;
 

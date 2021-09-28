@@ -1,8 +1,8 @@
 <template>
     <div class="welcome">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
+        <div class="container-fluid h-100">
+            <div class="row h-75">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center d-flex align-items-center">
                     <div class="welcome__pleca">
                         <img :src="left" alt="left">
                     </div>
@@ -14,7 +14,7 @@
                         <img :src="point_blank" alt="point">
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <div class="welcome__body">
                         <div class="welcome--title">
                             ¡BIENVENIDO!
@@ -56,27 +56,30 @@
                     </div>
                 </div>
             </div>
+            
         </div>
+
         <div class="welcome__bar">
-            <div class="welcome__circle">
-                <img :src="circle" alt="circle">
+                <div class="welcome__circle">
+                    <img :src="circle" alt="circle">
+                </div>
+                <div class="welcome__point-orange">
+                    <img :src="point_orange" alt="point_orange">
+                </div>
+                <div class="welcome__circle-blue">
+                    <img :src="circle_blue" alt="circle_blue">
+                </div>
+                <div class="welcome--button">
+                    <v-btn 
+                        depressed
+                        rounded
+                        color="#FFA726"
+                        @click="openForm">
+                        ¡QUIERO ASISTIR!
+                    </v-btn>
+                </div>
             </div>
-            <div class="welcome__point-orange">
-                <img :src="point_orange" alt="point_orange">
-            </div>
-            <div class="welcome__circle-blue">
-                <img :src="circle_blue" alt="circle_blue">
-            </div>
-            <div class="welcome--button">
-                <v-btn 
-                    depressed
-                    rounded
-                    color="#FFA726"
-                    @click="openForm">
-                    ¡QUIERO ASISTIR!
-                </v-btn>
-            </div>
-        </div>
+
         <vs-dialog 
             prevent-close 
             v-model="dialog" 
@@ -338,18 +341,140 @@
         min-width: 15%;
     }
 
-
-    @media (min-width: 1200px) {
+    @media (min-width: 320px) and (max-width: 599px) {
         .welcome {
-            height: 80vh;
+            &__lady {
+                &--inside {
+                    max-width: 50% !important;
+                    min-width: 50% !important;
+                }
 
-            &__bar {
-                height: 15vh;
-                background: rgba(0, 0, 0, 0.13);
-                position: relative;
-                top: 5px !important;
-                z-index: 999;
+                &--circle {
+                    max-width: 55% !important;
+                    min-width: 55% !important;
+                    top: -2% !important;
+                    left: 20% !important;
+                }
+            }   
+
+            &__body {
+                top: 1% !important;
+                left: 25% !important;
+            
             }
+
+            &--title {
+                font-size: 25px !important;
+            }
+
+            &--description {
+                font-size: 10px !important;
+            }
+
+            &--list {
+                font-size: 10px !important;
+
+            }
+
+            &__circle {
+
+                position: absolute;
+                float: right;
+                bottom: 80% !important;
+                right: 65% !important; 
+
+                img {
+                    max-width: 40% !important;
+                    min-width: 40% !important;
+                }
+  
+            }
+
+            &__point {
+
+                position: absolute;
+                z-index: 10000;
+                bottom: 25px;
+                left: 34%;
+            
+
+                img {
+                    max-width: 55%;
+                    min-width: 55%;
+                }   
+            }
+
+            &__point-orange {
+                position: absolute;
+                z-index: 10000;
+                bottom: 82%;
+                right: -22% !important;
+
+                img {
+                    max-width: 40% !important;
+                    min-width: 40% !important;
+                }
+          
+            }
+
+            &--button {
+                right: 34% !important;
+            }
+        }
+    }
+
+    @media (min-width: 600px) and (max-width: 767px) {
+        .welcome {
+            &__lady {
+                &--inside {
+                    max-width: 80% !important;
+                    min-width: 80% !important;
+                }
+
+                &--circle {
+                    max-width: 85% !important;
+                    min-width: 85% !important;
+                    top: 25% !important;
+                    left: 5% !important;
+                }
+            }   
+        }
+    }
+
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .welcome {
+            &__lady {
+                &--inside {
+                    max-width: 80% !important;
+                    min-width: 80% !important;
+                }
+
+                &--circle {
+                    max-width: 85% !important;
+                    min-width: 85% !important;
+                    top: 22% !important;
+                    left: 6% !important;
+                }
+            }   
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .welcome {
+            &__lady {
+                &--inside {
+                    max-width: 80% !important;
+                    min-width: 80% !important;
+                }
+
+                &--circle {
+                    max-width: 85% !important;
+                    min-width: 85% !important;
+                    top: 10% !important;
+                    left: 5% !important;
+                }
+            }   
         }
     }
 
@@ -499,10 +624,10 @@
         }
 
         &__bar {
-            height: 148px;
+            height: 150px;
             background: rgba(0, 0, 0, 0.13);
             position: relative;
-            top: -62px;
+            bottom: 20.9%;
             z-index: 999;
         }
     }
