@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <Header />
+        <Header v-if="!process" />
         <Welcome v-if="!process" @process-thanks="processThanks"/>
         <thanks v-else />
         <Footer/>
@@ -32,6 +32,9 @@ export default {
         processThanks(value) {
             this.process = value
         }
+    },
+    created() {
+        console.log(process.env)
     }
 }
 </script>

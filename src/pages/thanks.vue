@@ -14,14 +14,14 @@
                         <span>
                             Espera los próximos correos con más información
                             <br>
-                            sobre finanzas salidables.
+                            sobre finanzas saludables.
                         </span>
                     </div>
                 </div>
                 <div class="col-12 text-center">
                     <div class="thanks__slogan">
                         <span>
-                            Contruye un mejor futuro con HIR Casa.
+                            Construye un mejor futuro con HIR Casa.
                         </span>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
     }
 
     .thanks {
-        height: 80vh;
+        height: 95vh;
 
         &__title {
             font-family: "poppinssemibold";

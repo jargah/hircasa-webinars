@@ -39,7 +39,7 @@
                                     SAT: Impuestos para principiantes
                                 </li>
                                 <li>
-                                    Financial welness
+                                    Financial wellness
                                 </li>
                                 <li>
                                     Creando fondo de emergencias
@@ -75,7 +75,7 @@
                         rounded
                         color="#FFA726"
                         @click="openForm">
-                        ¡QUIERO ASISTIR!
+                        ¡QUIERO REGISTRARME!
                     </v-btn>
                 </div>
             </div>
@@ -92,9 +92,9 @@
                         <div class="col-12">
                             <div class="welcome__container-dialog">
                                 <span>
-                                    Aprender cómo tener una cosa antes de los 30, ahorrar para el futuro y 
+                                    Aprender cómo tener una casa antes de los 30, ahorrar para el futuro y 
                                     <br>
-                                    mejorar tus finanzas es muy fácil, <span style="color: #2626ef;"><b>sólo déjanos tus datos:</b></span>
+                                    mejorar tus finanzas es muy fácil, <span style="color: #2626ef;"><b>so lo déjanos tus datos:</b></span>
                                 </span>
                             </div>
                         </div>
@@ -343,6 +343,9 @@
 
     @media (min-width: 320px) and (max-width: 599px) {
         .welcome {
+
+            height: 100vh !important;
+
             &__lady {
                 &--inside {
                     max-width: 50% !important;
@@ -419,6 +422,10 @@
 
             &--button {
                 right: 34% !important;
+            }
+
+            &__container-dialog {
+                font-size: 10px;
             }
         }
     }

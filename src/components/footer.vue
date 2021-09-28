@@ -2,7 +2,7 @@
     <div>
         <div class="footer__bar">
             
-            <div class="footer__social d-flex align-items-center justify-content-end"> 
+            <div class="footer__social"> 
                 <a href="https://www.facebook.com/HIRCasaMexico" target="_blank">
                     <box-icon type='logo' name='facebook' size='md' border='circle' class="footer__social--icon" />
                 </a>
@@ -46,9 +46,7 @@
         }
 
         &__social {
-            float: right;
-            right: 30px;
-            position: relative;
+            text-align: center;
 
             &--icon {
                 margin: 9px;
