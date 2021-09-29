@@ -66,9 +66,9 @@
                 <div class="welcome__point-orange">
                     <img :src="point_orange" alt="point_orange">
                 </div>
-                <div class="welcome__circle-blue">
+                <!-- <div class="welcome__circle-blue">
                     <img :src="circle_blue" alt="circle_blue">
-                </div>
+                </div> -->
                 <div class="welcome--button">
                     <v-btn 
                         depressed
@@ -89,11 +89,11 @@
                 <div class="container">
                     <div class="row">
                         <img :src="logo" alt="logo_modal" class="logo_modal">
-                        <div class="col-12">
+                        <div class="col-10">
                             <div class="welcome__container-dialog">
                                 <span>
                                     Aprender cómo tener una casa antes de los 30, ahorrar para el futuro y 
-                                    <br>
+                                    
                                     mejorar tus finanzas es muy fácil, <span style="color: #2626ef;"><b>so lo déjanos tus datos:</b></span>
                                 </span>
                             </div>
