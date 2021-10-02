@@ -4,8 +4,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6">
-                    <div class="header__logo">
-                        <img :src="logo" alt="logo">
+                    <div class="header__logo" @click="home">
+                        <img :src="logo" alt="logo" style="cursor: pointer;">
                     </div>
                 </div>
                 <div class="col-6">
@@ -38,6 +38,11 @@
         data() {
             return {
                 logo
+            }
+        },
+        methods: {
+            home() {
+                window.location.href = 'https://hircasa.com'
             }
         }
 

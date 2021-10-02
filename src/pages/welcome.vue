@@ -147,10 +147,10 @@
                     <v-col cols="12" sm="6" md="6">
                         <v-text-field label="Correo" required v-model="form.email"></v-text-field>
                     </v-col>
-                    <v-col cols="12" sm="6" md="3">
+                    <!-- <v-col cols="12" sm="6" md="3">
                         <v-text-field label="Código Páis" required v-model="form.code" v-numeric maxlength="2" placeholder="Ejemplo: 52"></v-text-field>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="3">
+                    </v-col> -->
+                    <v-col cols="12" sm="6" md="6">
                         <v-text-field label="Teléfono" required v-model="form.phone" v-numeric maxlength="10"></v-text-field>
                     </v-col>
                     <v-col cols="12">
@@ -268,10 +268,10 @@
                     this.messages.push('El correo es requerido')
                 }
 
-                if(this.form.code === null) {
-                    error_request_data = true
-                    this.messages.push('El código del país es requerido')
-                }
+                // if(this.form.code === null) {
+                //     error_request_data = true
+                //     this.messages.push('El código del país es requerido')
+                // }
 
                 if(this.form.phone === null) {
                     error_request_data = true
@@ -299,7 +299,7 @@
                     paterno: this.form.last_name,
                     materno: this.form.second_surname,
                     correo: this.form.email,
-                    telefono: `${this.form.code}1${this.form.phone}`,
+                    telefono: `521${this.form.phone}`,
                     origen: `U-${this.form.university}`,
                     edad: this.form.age,
                     estado_estreno: this.form.city,
